@@ -1,8 +1,8 @@
-# Zombie Swarm - Raylib C++ Tutorial Series
+# Swarm Shooter - Raylib C++ Tutorial Series
 
-A top-down zombie survival shooter built from scratch with [raylib](https://www.raylib.com/) and C++. This repository is the companion starter for the **YouTube tutorial series** by [BlueFever Software](https://www.youtube.com/@BlueFeverSoft).
+A top-down survival shooter built from scratch with [raylib](https://www.raylib.com/) and C++. This repository is the companion starter for the **YouTube tutorial series** by [BlueFever Software](https://www.youtube.com/@BlueFeverSoft).
 
-![Zombie Swarm gameplay](shots/Shot1.png)
+![Swarm shooter gameplay](shots/Shot1.png)
 
 ## About the Game
 
