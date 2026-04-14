@@ -1,12 +1,13 @@
 #include "Movement.hpp"
 #include "CollisionMap.hpp"
 
-
-void Movement::Update(Transform2D& transform, Vector2 moveDir, 
-    float delta, const CollisionMap* collisionMap)
+void Movement::Update(Transform2D& transform, const MovementState& movementState, float delta,
+                    const CollisionMap *collisionMap)
 {
-    float newX = transform.position.x + moveDir.x * speed * delta;
-    float newY = transform.position.y + moveDir.y * speed * delta;
+    float newX = transform.position.x + movementState.moveDir.x * speed * delta;
+    float newY = transform.position.y + movementState.moveDir.y * speed * delta;
+
+    transform.rotation = movementState.aimAngle;
 
     if(collisionMap)
     {

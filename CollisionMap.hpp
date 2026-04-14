@@ -1,7 +1,6 @@
 #pragma once
 #include "raylib.h"
 
-
 class CollisionMap
 {
 public:

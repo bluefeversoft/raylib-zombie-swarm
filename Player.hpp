@@ -4,7 +4,9 @@
 #include "Transform2D.hpp"
 #include "Sprite.hpp"
 #include "Movement.hpp"
-#include "CollisionMap.hpp"
+
+
+class CollisionMap;
 
 
 class Player
@@ -13,15 +15,15 @@ public:
     Player(Texture2D* tex);
 
     void Draw() const;
-    void Update(Vector2 moveDir, float delta);
-    void SetCollisionMap(const CollisionMap* map);
+    void Update(float delta);
 
     Vector2 GetPosition() const;
     void SetPosition(Vector2 position);
+    void SetCollisionMap(const CollisionMap *collisionMap);
 
 private:
     Transform2D _transform;
     Sprite _sprite;
     Movement _movement;
-    const CollisionMap* _collisionMap = nullptr;
+    const CollisionMap *_collisionMap = nullptr;
 };
